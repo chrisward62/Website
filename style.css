@@ -1,0 +1,177 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f0f8ff; /* Light background for the body */
+    
+}
+
+header {
+    text-align: center;
+    padding: 1em;
+    background-color: #91aafd; /* Lighter blue for header and footer */
+    border-bottom: 2px solid #91aafd; /* Border for header */
+    border-top: 2px solid #91aafd; /* Border for footer */
+}
+
+footer {
+    text-align: center;
+    padding: 1em;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px; /* Add some padding on the sides */
+    background-color: #4e6fd8; /* Same as your navbar background */
+    max-width: 60%; /* Adjust the max-width as needed */
+    margin: 0 auto; /* This centers the navbar horizontally */
+    border-radius: 10px; /* Rounded corners for the navbar */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+}
+
+
+.navbar-brand {
+    font-size: 1.5em;
+    color: white;
+}
+
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* This will keep your navbar items in a row */
+    border-radius: 10px; /* Rounded corners for the navbar */
+}
+
+.navbar li {
+    float: none; /* Since we're using flexbox, float is not needed */
+}
+
+.navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    border-radius: 5px; /* Rounded corners for links */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+}
+
+.navbar li a:hover, .navbar li a:focus {
+    background-color: #3a4ba0; /* Slightly darker blue for hover/focus */
+    color: #fff;
+}
+
+main {
+    padding: 20px;
+    background-color: #f9fbfd; /* Very light background for content */
+    border-radius: 15px; /* Rounded corners for the content area */
+    margin: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3); /* Subtle shadow for depth */
+
+}
+
+footer {
+    margin-top: 20px;
+    border-radius: 0 0 10px 10px; /* Rounded corners for the bottom of footer */
+}
+
+.container {
+    max-width: 60%; /* Adjust the width as needed */
+    margin: 0 auto; /* Centers the container */
+    padding: 20px; /* Optional: Adds some padding inside the container */
+}
+
+
+.profile-card {
+    text-align: center;
+    background-color: #8fa9ff;
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+
+.profile-card h1 {
+    margin: 10px 0;
+}
+
+.profile-card p {
+    margin: 5px 0 20px;
+}
+
+.profile-photo {
+    width: 300px;
+    height: 300px;
+    border-radius: 10%;
+    margin-bottom: 20px;
+    border: 5px solid white;
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.profile-photo:hover {
+    transform: scale(1.05);
+}
+
+.social-icons {
+    margin-bottom: 20px;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+    margin: 0 10px;
+}
+
+.about-me, .contact-info {
+    background-color: #8fa9ff;
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.contact-info h2, .about-me h2 {
+    margin-bottom: 15px;
+}
+
+.social-icons {
+    margin-bottom: 20px;
+    /* Aligns icons horizontally */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Style for Font Awesome icons */
+.social-icons a {
+    color: inherit; /* Inherits color from parent element */
+    text-decoration: none; /* Removes underline from links */
+    margin: 0 10px; /* Spacing between icons */
+    font-size: 24px; /* Size of the icons */
+}
+
+/* Specific styles for GitHub icon */
+.social-icons a.github {
+    color: #333; /* GitHub icon color */
+}
+
+/* Specific styles for LinkedIn icon */
+.social-icons a.linkedin {
+    color: #0e76a8; /* LinkedIn icon color */
+}
+
+/* Accessibility for screen readers */
+.social-icons i[aria-hidden="true"] {
+    visibility: visible;
+}
+
+/* Hover effects for icons */
+.social-icons a:hover, .social-icons a:focus {
+    opacity: 0.7; /* Dim the icon a bit when hovered/focused */
+}
+
